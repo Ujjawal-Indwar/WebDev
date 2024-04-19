@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+       
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100px 200px 200px;
+            gap: 30px;
+        }
+
+        .first{
+            grid-column: span 2;
+        }
+
+        .card{
+            background-color: brown;
+        }
+
+        .flex-container{
+            display: flex;
+
+        }
+
+        .box{
+
+         background-color: aqua;
+         border: 2px dotted black;
+         height: 200px;
+         flex: 1;
+        }
+        .second{
+           flex: 2;
+        }
+        .third{
+            flex: .5;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="first card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    <div class="flex-container">
+        <div class="second box"></div>
+        <div class=" third box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
